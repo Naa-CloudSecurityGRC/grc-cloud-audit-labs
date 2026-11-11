@@ -1,0 +1,24 @@
+{
+  "properties": {
+    "displayName": "Resource groups must have Owner and ExpirationDate tags",
+    "policyType": "Custom",
+    "mode": "All",
+    "description": "Denies creation of resource groups without Owner and ExpirationDate tags, so every new workload has an accountable owner and a review date.",
+    "metadata": { "category": "Tags", "version": "1.0.0" },
+    "parameters": {},
+    "policyRule": {
+      "if": {
+        "allOf": [
+          { "field": "type", "equals": "Microsoft.Resources/subscriptions/resourceGroups" },
+          {
+            "anyOf": [
+              { "field": "tags['Owner']", "exists": "false" },
+              { "field": "tags['ExpirationDate']", "exists": "false" }
+            ]
+          }
+        ]
+      },
+      "then": { "effect": "deny" }
+    }
+  }
+}

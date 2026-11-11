@@ -1,0 +1,11 @@
+sub,resourceGroup,vm,daysSinceActivity,inactiveOver45d,estDiskUSDmonth,owner
+3,rg-labs-app,cb-labs-vm03,148,Yes,9.53,it-ops@carebridge.example
+3,rg-labs-sandbox,cb-labs-vm05,145,Yes,17.14,it-ops@carebridge.example
+3,rg-labs-sandbox,cb-labs-vm09,62,Yes,9.53,it-ops@carebridge.example
+1,rg-prod-app,cb-prod-vm28,16,No,9.53,rg-owner@carebridge.example
+3,rg-labs-data,cb-labs-vm45,40,No,5.71,data@carebridge.example
+1,rg-prod-legacy,cb-prod-vm82,22,No,17.14,data@carebridge.example
+3,rg-labs-sandbox,cb-labs-vm85,15,No,5.71,rg-owner@carebridge.example
+3,rg-labs-sandbox,cb-labs-vm91,34,No,17.14,rg-owner@carebridge.example
+3,rg-labs-data,cb-labs-vm93,24,No,5.71,rg-owner@carebridge.example
+1,rg-prod-legacy,cb-legacy-rds01,1,No,0,security@brightline.example

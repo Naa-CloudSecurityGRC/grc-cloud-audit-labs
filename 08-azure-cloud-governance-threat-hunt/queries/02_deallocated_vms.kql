@@ -1,0 +1,9 @@
+// Azure Resource Graph: VMs that are deallocated (compute stopped, disks still billed)
+// Cross-check with Activity Logs before decommissioning (see 06_vm_last_activity.kql).
+Resources
+| where type =~ 'microsoft.compute/virtualmachines'
+| extend powerState = tostring(properties.extended.instanceView.powerState.code)
+| where powerState =~ 'PowerState/deallocated'
+| project subscriptionId, resourceGroup, name, location,
+          vmSize = tostring(properties.hardwareProfile.vmSize),
+          owner = tostring(tags['Owner'])

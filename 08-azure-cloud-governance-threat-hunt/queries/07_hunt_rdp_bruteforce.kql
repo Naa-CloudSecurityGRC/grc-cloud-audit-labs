@@ -1,0 +1,10 @@
+// Log Analytics (SecurityEvent): RDP / network logon brute force against internet-exposed hosts
+SecurityEvent
+| where TimeGenerated > ago(7d)
+| where EventID == 4625 and LogonType in (3, 10)
+| where not(ipv4_is_private(IpAddress))
+| summarize failures = count(), accountsTried = dcount(TargetAccount),
+            firstSeen = min(TimeGenerated), lastSeen = max(TimeGenerated)
+          by IpAddress, Computer
+| where failures > 50
+| order by failures desc

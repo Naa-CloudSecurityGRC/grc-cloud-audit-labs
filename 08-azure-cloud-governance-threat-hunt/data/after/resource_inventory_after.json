@@ -1,0 +1,5241 @@
+{
+ "generatedFor": "CareBridge Telehealth (fictional)",
+ "snapshotDate": "2026-11-30",
+ "data": [
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-legacy/providers/Microsoft.Compute/virtualMachines/cb-prod-vm00",
+   "name": "cb-prod-vm00",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "centralus",
+   "resourceGroup": "rg-prod-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "data@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D2s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-prod-vm00-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-09-29"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-legacy/providers/Microsoft.Compute/disks/cb-prod-vm00-osdisk",
+   "name": "cb-prod-vm00-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "centralus",
+   "resourceGroup": "rg-prod-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "data@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Premium_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-sandbox/providers/Microsoft.Compute/virtualMachines/cb-labs-vm01",
+   "name": "cb-labs-vm01",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus",
+   "resourceGroup": "rg-labs-sandbox",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_B2s"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-labs-vm01-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-16"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-sandbox/providers/Microsoft.Compute/disks/cb-labs-vm01-osdisk",
+   "name": "cb-labs-vm01-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus",
+   "resourceGroup": "rg-labs-sandbox",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "StandardSSD_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-sandbox/providers/Microsoft.Compute/virtualMachines/cb-prod-vm02",
+   "name": "cb-prod-vm02",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus2",
+   "resourceGroup": "rg-prod-sandbox",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "dev",
+    "ExpirationDate": "2027-06-30",
+    "Owner": "rg-owner@carebridge.example"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D2s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-prod-vm02-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-18"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-sandbox/providers/Microsoft.Compute/disks/cb-prod-vm02-osdisk",
+   "name": "cb-prod-vm02-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus2",
+   "resourceGroup": "rg-prod-sandbox",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "dev",
+    "ExpirationDate": "2027-06-30",
+    "Owner": "rg-owner@carebridge.example"
+   },
+   "sku": {
+    "name": "StandardSSD_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-app/providers/Microsoft.Compute/virtualMachines/cb-labs-vm03",
+   "name": "cb-labs-vm03",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus2",
+   "resourceGroup": "rg-labs-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "it-ops@carebridge.example",
+    "ExpirationDate": "2026-12-31"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D4s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-labs-vm03-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/deallocated"
+      }
+     }
+    },
+    "lastActivityDate": "2026-06-07"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-app/providers/Microsoft.Compute/disks/cb-labs-vm03-osdisk",
+   "name": "cb-labs-vm03-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus2",
+   "resourceGroup": "rg-labs-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "data@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "StandardSSD_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Reserved",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-legacy/providers/Microsoft.Compute/virtualMachines/cb-prod-vm04",
+   "name": "cb-prod-vm04",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus",
+   "resourceGroup": "rg-prod-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "data@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_B2s"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-prod-vm04-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-04"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-legacy/providers/Microsoft.Compute/disks/cb-prod-vm04-osdisk",
+   "name": "cb-prod-vm04-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus",
+   "resourceGroup": "rg-prod-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "data@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "StandardSSD_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-sandbox/providers/Microsoft.Compute/virtualMachines/cb-labs-vm05",
+   "name": "cb-labs-vm05",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus2",
+   "resourceGroup": "rg-labs-sandbox",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "it-ops@carebridge.example",
+    "ExpirationDate": "2026-12-31"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_B2s"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-labs-vm05-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/deallocated"
+      }
+     }
+    },
+    "lastActivityDate": "2026-06-10"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-sandbox/providers/Microsoft.Compute/disks/cb-labs-vm05-osdisk",
+   "name": "cb-labs-vm05-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus2",
+   "resourceGroup": "rg-labs-sandbox",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "dev-team@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Premium_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Reserved",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-data/providers/Microsoft.Compute/virtualMachines/cb-prod-vm06",
+   "name": "cb-prod-vm06",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "centralus",
+   "resourceGroup": "rg-prod-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "dev-team@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D2s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-prod-vm06-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-09-28"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-data/providers/Microsoft.Compute/disks/cb-prod-vm06-osdisk",
+   "name": "cb-prod-vm06-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "centralus",
+   "resourceGroup": "rg-prod-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "dev-team@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Standard_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-sandbox/providers/Microsoft.Compute/virtualMachines/cb-prod-vm07",
+   "name": "cb-prod-vm07",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus2",
+   "resourceGroup": "rg-prod-sandbox",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "lab",
+    "ExpirationDate": "2027-06-30",
+    "Owner": "rg-owner@carebridge.example"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D4s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-prod-vm07-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-09-27"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-sandbox/providers/Microsoft.Compute/disks/cb-prod-vm07-osdisk",
+   "name": "cb-prod-vm07-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus2",
+   "resourceGroup": "rg-prod-sandbox",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "lab",
+    "ExpirationDate": "2027-06-30",
+    "Owner": "rg-owner@carebridge.example"
+   },
+   "sku": {
+    "name": "Premium_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-sandbox/providers/Microsoft.Compute/virtualMachines/cb-labs-vm08",
+   "name": "cb-labs-vm08",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus2",
+   "resourceGroup": "rg-labs-sandbox",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D4s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-labs-vm08-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-19"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-sandbox/providers/Microsoft.Compute/disks/cb-labs-vm08-osdisk",
+   "name": "cb-labs-vm08-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus2",
+   "resourceGroup": "rg-labs-sandbox",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "StandardSSD_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-sandbox/providers/Microsoft.Compute/virtualMachines/cb-labs-vm09",
+   "name": "cb-labs-vm09",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus2",
+   "resourceGroup": "rg-labs-sandbox",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "it-ops@carebridge.example",
+    "ExpirationDate": "2026-12-31"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D2s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-labs-vm09-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/deallocated"
+      }
+     }
+    },
+    "lastActivityDate": "2026-09-01"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-sandbox/providers/Microsoft.Compute/disks/cb-labs-vm09-osdisk",
+   "name": "cb-labs-vm09-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus2",
+   "resourceGroup": "rg-labs-sandbox",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "data@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "StandardSSD_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Reserved",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-app/providers/Microsoft.Compute/virtualMachines/cb-labs-vm10",
+   "name": "cb-labs-vm10",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus2",
+   "resourceGroup": "rg-labs-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "data@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_B2s"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-labs-vm10-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-25"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-app/providers/Microsoft.Compute/disks/cb-labs-vm10-osdisk",
+   "name": "cb-labs-vm10-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus2",
+   "resourceGroup": "rg-labs-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "data@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "StandardSSD_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-sandbox/providers/Microsoft.Compute/virtualMachines/cb-labs-vm11",
+   "name": "cb-labs-vm11",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus2",
+   "resourceGroup": "rg-labs-sandbox",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "prod",
+    "ExpirationDate": "2027-06-30",
+    "Owner": "rg-owner@carebridge.example"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_B2s"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-labs-vm11-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-09-30"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-sandbox/providers/Microsoft.Compute/disks/cb-labs-vm11-osdisk",
+   "name": "cb-labs-vm11-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus2",
+   "resourceGroup": "rg-labs-sandbox",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "prod",
+    "ExpirationDate": "2027-06-30",
+    "Owner": "rg-owner@carebridge.example"
+   },
+   "sku": {
+    "name": "StandardSSD_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-data/providers/Microsoft.Compute/virtualMachines/cb-labs-vm15",
+   "name": "cb-labs-vm15",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus2",
+   "resourceGroup": "rg-labs-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "lab",
+    "ExpirationDate": "2027-06-30",
+    "Owner": "rg-owner@carebridge.example"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D4s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-labs-vm15-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-09-24"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-data/providers/Microsoft.Compute/disks/cb-labs-vm15-osdisk",
+   "name": "cb-labs-vm15-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus2",
+   "resourceGroup": "rg-labs-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "lab",
+    "ExpirationDate": "2027-06-30",
+    "Owner": "rg-owner@carebridge.example"
+   },
+   "sku": {
+    "name": "Standard_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-app/providers/Microsoft.Compute/virtualMachines/cb-dev-vm16",
+   "name": "cb-dev-vm16",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus",
+   "resourceGroup": "rg-dev-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "data@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_B2s"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-dev-vm16-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-07"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-app/providers/Microsoft.Compute/disks/cb-dev-vm16-osdisk",
+   "name": "cb-dev-vm16-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus",
+   "resourceGroup": "rg-dev-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "data@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Standard_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-data/providers/Microsoft.Compute/virtualMachines/cb-prod-vm18",
+   "name": "cb-prod-vm18",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus2",
+   "resourceGroup": "rg-prod-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D4s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-prod-vm18-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-18"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-data/providers/Microsoft.Compute/disks/cb-prod-vm18-osdisk",
+   "name": "cb-prod-vm18-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus2",
+   "resourceGroup": "rg-prod-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Premium_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-app/providers/Microsoft.Compute/virtualMachines/cb-dev-vm20",
+   "name": "cb-dev-vm20",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus",
+   "resourceGroup": "rg-dev-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "it-ops@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_B2s"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-dev-vm20-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-09-28"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-app/providers/Microsoft.Compute/disks/cb-dev-vm20-osdisk",
+   "name": "cb-dev-vm20-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus",
+   "resourceGroup": "rg-dev-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "it-ops@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "StandardSSD_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-sandbox/providers/Microsoft.Compute/virtualMachines/cb-dev-vm21",
+   "name": "cb-dev-vm21",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus2",
+   "resourceGroup": "rg-dev-sandbox",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D2s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-dev-vm21-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-26"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-sandbox/providers/Microsoft.Compute/disks/cb-dev-vm21-osdisk",
+   "name": "cb-dev-vm21-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus2",
+   "resourceGroup": "rg-dev-sandbox",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "StandardSSD_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-legacy/providers/Microsoft.Compute/virtualMachines/cb-dev-vm22",
+   "name": "cb-dev-vm22",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "centralus",
+   "resourceGroup": "rg-dev-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D4s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-dev-vm22-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-11"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-legacy/providers/Microsoft.Compute/disks/cb-dev-vm22-osdisk",
+   "name": "cb-dev-vm22-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "centralus",
+   "resourceGroup": "rg-dev-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "StandardSSD_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-data/providers/Microsoft.Compute/virtualMachines/cb-prod-vm23",
+   "name": "cb-prod-vm23",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus2",
+   "resourceGroup": "rg-prod-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D4s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-prod-vm23-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-26"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-data/providers/Microsoft.Compute/disks/cb-prod-vm23-osdisk",
+   "name": "cb-prod-vm23-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus2",
+   "resourceGroup": "rg-prod-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Standard_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-legacy/providers/Microsoft.Compute/virtualMachines/cb-prod-vm24",
+   "name": "cb-prod-vm24",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "centralus",
+   "resourceGroup": "rg-prod-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "data@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D4s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-prod-vm24-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-09"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-legacy/providers/Microsoft.Compute/disks/cb-prod-vm24-osdisk",
+   "name": "cb-prod-vm24-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "centralus",
+   "resourceGroup": "rg-prod-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "data@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Premium_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-data/providers/Microsoft.Compute/virtualMachines/cb-dev-vm25",
+   "name": "cb-dev-vm25",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus2",
+   "resourceGroup": "rg-dev-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "it-ops@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_B2s"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-dev-vm25-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-09-25"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-data/providers/Microsoft.Compute/disks/cb-dev-vm25-osdisk",
+   "name": "cb-dev-vm25-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus2",
+   "resourceGroup": "rg-dev-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "it-ops@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "StandardSSD_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-app/providers/Microsoft.Compute/virtualMachines/cb-prod-vm26",
+   "name": "cb-prod-vm26",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "centralus",
+   "resourceGroup": "rg-prod-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "it-ops@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D2s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-prod-vm26-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-09"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-app/providers/Microsoft.Compute/disks/cb-prod-vm26-osdisk",
+   "name": "cb-prod-vm26-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "centralus",
+   "resourceGroup": "rg-prod-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "it-ops@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Premium_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-legacy/providers/Microsoft.Compute/virtualMachines/cb-prod-vm27",
+   "name": "cb-prod-vm27",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus2",
+   "resourceGroup": "rg-prod-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D2s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-prod-vm27-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-21"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-legacy/providers/Microsoft.Compute/disks/cb-prod-vm27-osdisk",
+   "name": "cb-prod-vm27-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus2",
+   "resourceGroup": "rg-prod-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "StandardSSD_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-app/providers/Microsoft.Compute/virtualMachines/cb-prod-vm28",
+   "name": "cb-prod-vm28",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus2",
+   "resourceGroup": "rg-prod-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D2s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-prod-vm28-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/deallocated"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-17"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-app/providers/Microsoft.Compute/disks/cb-prod-vm28-osdisk",
+   "name": "cb-prod-vm28-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus2",
+   "resourceGroup": "rg-prod-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "StandardSSD_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Reserved",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-app/providers/Microsoft.Compute/virtualMachines/cb-dev-vm29",
+   "name": "cb-dev-vm29",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "centralus",
+   "resourceGroup": "rg-dev-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "dev-team@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_B2s"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-dev-vm29-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-11"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-app/providers/Microsoft.Compute/disks/cb-dev-vm29-osdisk",
+   "name": "cb-dev-vm29-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "centralus",
+   "resourceGroup": "rg-dev-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "dev-team@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Premium_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-legacy/providers/Microsoft.Compute/virtualMachines/cb-dev-vm30",
+   "name": "cb-dev-vm30",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus",
+   "resourceGroup": "rg-dev-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "it-ops@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D2s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-dev-vm30-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-09"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-legacy/providers/Microsoft.Compute/disks/cb-dev-vm30-osdisk",
+   "name": "cb-dev-vm30-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus",
+   "resourceGroup": "rg-dev-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "it-ops@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "StandardSSD_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-app/providers/Microsoft.Compute/virtualMachines/cb-prod-vm32",
+   "name": "cb-prod-vm32",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus",
+   "resourceGroup": "rg-prod-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D4s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-prod-vm32-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-24"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-app/providers/Microsoft.Compute/disks/cb-prod-vm32-osdisk",
+   "name": "cb-prod-vm32-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus",
+   "resourceGroup": "rg-prod-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Premium_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-app/providers/Microsoft.Compute/virtualMachines/cb-dev-vm33",
+   "name": "cb-dev-vm33",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus2",
+   "resourceGroup": "rg-dev-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D2s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-dev-vm33-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-23"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-app/providers/Microsoft.Compute/disks/cb-dev-vm33-osdisk",
+   "name": "cb-dev-vm33-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus2",
+   "resourceGroup": "rg-dev-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Premium_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-data/providers/Microsoft.Compute/virtualMachines/cb-prod-vm34",
+   "name": "cb-prod-vm34",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "centralus",
+   "resourceGroup": "rg-prod-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "data@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D2s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-prod-vm34-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-30"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-data/providers/Microsoft.Compute/disks/cb-prod-vm34-osdisk",
+   "name": "cb-prod-vm34-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "centralus",
+   "resourceGroup": "rg-prod-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "data@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Standard_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-data/providers/Microsoft.Compute/virtualMachines/cb-prod-vm36",
+   "name": "cb-prod-vm36",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus2",
+   "resourceGroup": "rg-prod-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "data@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D4s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-prod-vm36-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-09-29"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-data/providers/Microsoft.Compute/disks/cb-prod-vm36-osdisk",
+   "name": "cb-prod-vm36-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus2",
+   "resourceGroup": "rg-prod-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "data@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Standard_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-data/providers/Microsoft.Compute/virtualMachines/cb-dev-vm38",
+   "name": "cb-dev-vm38",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus2",
+   "resourceGroup": "rg-dev-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D2s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-dev-vm38-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-14"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-data/providers/Microsoft.Compute/disks/cb-dev-vm38-osdisk",
+   "name": "cb-dev-vm38-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus2",
+   "resourceGroup": "rg-dev-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Premium_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-legacy/providers/Microsoft.Compute/virtualMachines/cb-dev-vm39",
+   "name": "cb-dev-vm39",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus",
+   "resourceGroup": "rg-dev-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "dev-team@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D4s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-dev-vm39-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-05"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-legacy/providers/Microsoft.Compute/disks/cb-dev-vm39-osdisk",
+   "name": "cb-dev-vm39-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus",
+   "resourceGroup": "rg-dev-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "dev-team@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Premium_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-app/providers/Microsoft.Compute/virtualMachines/cb-dev-vm40",
+   "name": "cb-dev-vm40",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus2",
+   "resourceGroup": "rg-dev-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "dev-team@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D4s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-dev-vm40-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-26"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-app/providers/Microsoft.Compute/disks/cb-dev-vm40-osdisk",
+   "name": "cb-dev-vm40-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus2",
+   "resourceGroup": "rg-dev-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "dev-team@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Standard_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-data/providers/Microsoft.Compute/virtualMachines/cb-prod-vm41",
+   "name": "cb-prod-vm41",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus2",
+   "resourceGroup": "rg-prod-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D4s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-prod-vm41-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-09-24"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-data/providers/Microsoft.Compute/disks/cb-prod-vm41-osdisk",
+   "name": "cb-prod-vm41-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus2",
+   "resourceGroup": "rg-prod-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Premium_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-app/providers/Microsoft.Compute/virtualMachines/cb-labs-vm44",
+   "name": "cb-labs-vm44",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus2",
+   "resourceGroup": "rg-labs-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_B2s"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-labs-vm44-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-04"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-app/providers/Microsoft.Compute/disks/cb-labs-vm44-osdisk",
+   "name": "cb-labs-vm44-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus2",
+   "resourceGroup": "rg-labs-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "StandardSSD_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-data/providers/Microsoft.Compute/virtualMachines/cb-labs-vm45",
+   "name": "cb-labs-vm45",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "centralus",
+   "resourceGroup": "rg-labs-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "data@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D2s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-labs-vm45-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/deallocated"
+      }
+     }
+    },
+    "lastActivityDate": "2026-09-23"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-data/providers/Microsoft.Compute/disks/cb-labs-vm45-osdisk",
+   "name": "cb-labs-vm45-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "centralus",
+   "resourceGroup": "rg-labs-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "data@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Standard_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Reserved",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-legacy/providers/Microsoft.Compute/virtualMachines/cb-dev-vm46",
+   "name": "cb-dev-vm46",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "centralus",
+   "resourceGroup": "rg-dev-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D2s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-dev-vm46-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-22"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-legacy/providers/Microsoft.Compute/disks/cb-dev-vm46-osdisk",
+   "name": "cb-dev-vm46-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "centralus",
+   "resourceGroup": "rg-dev-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "StandardSSD_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-app/providers/Microsoft.Compute/virtualMachines/cb-prod-vm47",
+   "name": "cb-prod-vm47",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus2",
+   "resourceGroup": "rg-prod-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D2s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-prod-vm47-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-09-22"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-app/providers/Microsoft.Compute/disks/cb-prod-vm47-osdisk",
+   "name": "cb-prod-vm47-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus2",
+   "resourceGroup": "rg-prod-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Standard_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-data/providers/Microsoft.Compute/virtualMachines/cb-labs-vm48",
+   "name": "cb-labs-vm48",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "centralus",
+   "resourceGroup": "rg-labs-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "dev",
+    "ExpirationDate": "2027-06-30",
+    "Owner": "rg-owner@carebridge.example"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_B2s"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-labs-vm48-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-02"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-data/providers/Microsoft.Compute/disks/cb-labs-vm48-osdisk",
+   "name": "cb-labs-vm48-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "centralus",
+   "resourceGroup": "rg-labs-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "dev",
+    "ExpirationDate": "2027-06-30",
+    "Owner": "rg-owner@carebridge.example"
+   },
+   "sku": {
+    "name": "StandardSSD_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-legacy/providers/Microsoft.Compute/virtualMachines/cb-dev-vm49",
+   "name": "cb-dev-vm49",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus",
+   "resourceGroup": "rg-dev-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D2s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-dev-vm49-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-17"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-legacy/providers/Microsoft.Compute/disks/cb-dev-vm49-osdisk",
+   "name": "cb-dev-vm49-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus",
+   "resourceGroup": "rg-dev-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Premium_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-sandbox/providers/Microsoft.Compute/virtualMachines/cb-dev-vm51",
+   "name": "cb-dev-vm51",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "centralus",
+   "resourceGroup": "rg-dev-sandbox",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "it-ops@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D2s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-dev-vm51-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-03"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-sandbox/providers/Microsoft.Compute/disks/cb-dev-vm51-osdisk",
+   "name": "cb-dev-vm51-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "centralus",
+   "resourceGroup": "rg-dev-sandbox",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "it-ops@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Standard_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-legacy/providers/Microsoft.Compute/virtualMachines/cb-dev-vm52",
+   "name": "cb-dev-vm52",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus2",
+   "resourceGroup": "rg-dev-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "dev-team@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_B2s"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-dev-vm52-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-03"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-legacy/providers/Microsoft.Compute/disks/cb-dev-vm52-osdisk",
+   "name": "cb-dev-vm52-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus2",
+   "resourceGroup": "rg-dev-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "dev-team@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Premium_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-legacy/providers/Microsoft.Compute/virtualMachines/cb-prod-vm53",
+   "name": "cb-prod-vm53",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "centralus",
+   "resourceGroup": "rg-prod-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D2s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-prod-vm53-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-02"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-legacy/providers/Microsoft.Compute/disks/cb-prod-vm53-osdisk",
+   "name": "cb-prod-vm53-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "centralus",
+   "resourceGroup": "rg-prod-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Premium_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-legacy/providers/Microsoft.Compute/virtualMachines/cb-dev-vm55",
+   "name": "cb-dev-vm55",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus2",
+   "resourceGroup": "rg-dev-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D4s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-dev-vm55-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-28"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-legacy/providers/Microsoft.Compute/disks/cb-dev-vm55-osdisk",
+   "name": "cb-dev-vm55-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus2",
+   "resourceGroup": "rg-dev-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "StandardSSD_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-legacy/providers/Microsoft.Compute/virtualMachines/cb-prod-vm56",
+   "name": "cb-prod-vm56",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus2",
+   "resourceGroup": "rg-prod-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "dev-team@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_B2s"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-prod-vm56-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-09-22"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-legacy/providers/Microsoft.Compute/disks/cb-prod-vm56-osdisk",
+   "name": "cb-prod-vm56-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus2",
+   "resourceGroup": "rg-prod-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "dev-team@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Standard_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-app/providers/Microsoft.Compute/virtualMachines/cb-dev-vm58",
+   "name": "cb-dev-vm58",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "centralus",
+   "resourceGroup": "rg-dev-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "it-ops@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_B2s"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-dev-vm58-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-19"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-app/providers/Microsoft.Compute/disks/cb-dev-vm58-osdisk",
+   "name": "cb-dev-vm58-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "centralus",
+   "resourceGroup": "rg-dev-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "it-ops@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "StandardSSD_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-data/providers/Microsoft.Compute/virtualMachines/cb-prod-vm59",
+   "name": "cb-prod-vm59",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "centralus",
+   "resourceGroup": "rg-prod-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "data@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_B2s"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-prod-vm59-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-26"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-data/providers/Microsoft.Compute/disks/cb-prod-vm59-osdisk",
+   "name": "cb-prod-vm59-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "centralus",
+   "resourceGroup": "rg-prod-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "data@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Standard_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-legacy/providers/Microsoft.Compute/virtualMachines/cb-prod-vm60",
+   "name": "cb-prod-vm60",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus",
+   "resourceGroup": "rg-prod-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "it-ops@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D2s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-prod-vm60-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-29"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-legacy/providers/Microsoft.Compute/disks/cb-prod-vm60-osdisk",
+   "name": "cb-prod-vm60-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus",
+   "resourceGroup": "rg-prod-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "it-ops@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Premium_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-legacy/providers/Microsoft.Compute/virtualMachines/cb-labs-vm64",
+   "name": "cb-labs-vm64",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "centralus",
+   "resourceGroup": "rg-labs-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D2s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-labs-vm64-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-09-29"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-legacy/providers/Microsoft.Compute/disks/cb-labs-vm64-osdisk",
+   "name": "cb-labs-vm64-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "centralus",
+   "resourceGroup": "rg-labs-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "StandardSSD_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-app/providers/Microsoft.Compute/virtualMachines/cb-prod-vm65",
+   "name": "cb-prod-vm65",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus2",
+   "resourceGroup": "rg-prod-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "dev-team@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D4s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-prod-vm65-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-20"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-app/providers/Microsoft.Compute/disks/cb-prod-vm65-osdisk",
+   "name": "cb-prod-vm65-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus2",
+   "resourceGroup": "rg-prod-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "dev-team@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Standard_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-sandbox/providers/Microsoft.Compute/virtualMachines/cb-prod-vm66",
+   "name": "cb-prod-vm66",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "centralus",
+   "resourceGroup": "rg-prod-sandbox",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D2s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-prod-vm66-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-04"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-sandbox/providers/Microsoft.Compute/disks/cb-prod-vm66-osdisk",
+   "name": "cb-prod-vm66-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "centralus",
+   "resourceGroup": "rg-prod-sandbox",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Premium_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-data/providers/Microsoft.Compute/virtualMachines/cb-dev-vm67",
+   "name": "cb-dev-vm67",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus2",
+   "resourceGroup": "rg-dev-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D4s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-dev-vm67-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-11"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-data/providers/Microsoft.Compute/disks/cb-dev-vm67-osdisk",
+   "name": "cb-dev-vm67-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus2",
+   "resourceGroup": "rg-dev-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Standard_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-data/providers/Microsoft.Compute/virtualMachines/cb-prod-vm68",
+   "name": "cb-prod-vm68",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "centralus",
+   "resourceGroup": "rg-prod-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "lab",
+    "ExpirationDate": "2027-06-30",
+    "Owner": "rg-owner@carebridge.example"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_B2s"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-prod-vm68-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-23"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-data/providers/Microsoft.Compute/disks/cb-prod-vm68-osdisk",
+   "name": "cb-prod-vm68-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "centralus",
+   "resourceGroup": "rg-prod-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "lab",
+    "ExpirationDate": "2027-06-30",
+    "Owner": "rg-owner@carebridge.example"
+   },
+   "sku": {
+    "name": "StandardSSD_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-data/providers/Microsoft.Compute/virtualMachines/cb-dev-vm69",
+   "name": "cb-dev-vm69",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "centralus",
+   "resourceGroup": "rg-dev-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D4s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-dev-vm69-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-09-27"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-data/providers/Microsoft.Compute/disks/cb-dev-vm69-osdisk",
+   "name": "cb-dev-vm69-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "centralus",
+   "resourceGroup": "rg-dev-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Standard_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-data/providers/Microsoft.Compute/virtualMachines/cb-prod-vm70",
+   "name": "cb-prod-vm70",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus2",
+   "resourceGroup": "rg-prod-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "dev-team@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D2s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-prod-vm70-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-09-22"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-data/providers/Microsoft.Compute/disks/cb-prod-vm70-osdisk",
+   "name": "cb-prod-vm70-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus2",
+   "resourceGroup": "rg-prod-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "dev-team@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Premium_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-sandbox/providers/Microsoft.Compute/virtualMachines/cb-prod-vm71",
+   "name": "cb-prod-vm71",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus",
+   "resourceGroup": "rg-prod-sandbox",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D2s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-prod-vm71-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-05"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-sandbox/providers/Microsoft.Compute/disks/cb-prod-vm71-osdisk",
+   "name": "cb-prod-vm71-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus",
+   "resourceGroup": "rg-prod-sandbox",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Standard_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-app/providers/Microsoft.Compute/virtualMachines/cb-prod-vm72",
+   "name": "cb-prod-vm72",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus2",
+   "resourceGroup": "rg-prod-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_B2s"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-prod-vm72-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-15"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-app/providers/Microsoft.Compute/disks/cb-prod-vm72-osdisk",
+   "name": "cb-prod-vm72-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus2",
+   "resourceGroup": "rg-prod-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "StandardSSD_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-sandbox/providers/Microsoft.Compute/virtualMachines/cb-dev-vm74",
+   "name": "cb-dev-vm74",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "centralus",
+   "resourceGroup": "rg-dev-sandbox",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "data@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D4s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-dev-vm74-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-08"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-sandbox/providers/Microsoft.Compute/disks/cb-dev-vm74-osdisk",
+   "name": "cb-dev-vm74-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "centralus",
+   "resourceGroup": "rg-dev-sandbox",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "data@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Premium_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-app/providers/Microsoft.Compute/virtualMachines/cb-dev-vm75",
+   "name": "cb-dev-vm75",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "centralus",
+   "resourceGroup": "rg-dev-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D4s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-dev-vm75-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-18"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-app/providers/Microsoft.Compute/disks/cb-dev-vm75-osdisk",
+   "name": "cb-dev-vm75-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "centralus",
+   "resourceGroup": "rg-dev-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Premium_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-legacy/providers/Microsoft.Compute/virtualMachines/cb-dev-vm78",
+   "name": "cb-dev-vm78",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus",
+   "resourceGroup": "rg-dev-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "dev-team@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D4s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-dev-vm78-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-23"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-legacy/providers/Microsoft.Compute/disks/cb-dev-vm78-osdisk",
+   "name": "cb-dev-vm78-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus",
+   "resourceGroup": "rg-dev-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "dev-team@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Premium_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-app/providers/Microsoft.Compute/virtualMachines/cb-labs-vm79",
+   "name": "cb-labs-vm79",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus2",
+   "resourceGroup": "rg-labs-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D4s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-labs-vm79-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-11"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-app/providers/Microsoft.Compute/disks/cb-labs-vm79-osdisk",
+   "name": "cb-labs-vm79-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus2",
+   "resourceGroup": "rg-labs-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Premium_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-app/providers/Microsoft.Compute/virtualMachines/cb-labs-vm80",
+   "name": "cb-labs-vm80",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "centralus",
+   "resourceGroup": "rg-labs-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "prod",
+    "ExpirationDate": "2027-06-30",
+    "Owner": "rg-owner@carebridge.example"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D4s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-labs-vm80-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-26"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-app/providers/Microsoft.Compute/disks/cb-labs-vm80-osdisk",
+   "name": "cb-labs-vm80-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "centralus",
+   "resourceGroup": "rg-labs-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "prod",
+    "ExpirationDate": "2027-06-30",
+    "Owner": "rg-owner@carebridge.example"
+   },
+   "sku": {
+    "name": "Standard_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-sandbox/providers/Microsoft.Compute/virtualMachines/cb-dev-vm81",
+   "name": "cb-dev-vm81",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus",
+   "resourceGroup": "rg-dev-sandbox",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "it-ops@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D2s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-dev-vm81-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-09-27"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-sandbox/providers/Microsoft.Compute/disks/cb-dev-vm81-osdisk",
+   "name": "cb-dev-vm81-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus",
+   "resourceGroup": "rg-dev-sandbox",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "it-ops@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Standard_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-legacy/providers/Microsoft.Compute/virtualMachines/cb-prod-vm82",
+   "name": "cb-prod-vm82",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "centralus",
+   "resourceGroup": "rg-prod-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "data@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D2s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-prod-vm82-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/deallocated"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-11"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-legacy/providers/Microsoft.Compute/disks/cb-prod-vm82-osdisk",
+   "name": "cb-prod-vm82-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "centralus",
+   "resourceGroup": "rg-prod-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "data@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Premium_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Reserved",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-legacy/providers/Microsoft.Compute/virtualMachines/cb-prod-vm83",
+   "name": "cb-prod-vm83",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus2",
+   "resourceGroup": "rg-prod-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "data@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_B2s"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-prod-vm83-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-16"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-legacy/providers/Microsoft.Compute/disks/cb-prod-vm83-osdisk",
+   "name": "cb-prod-vm83-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus2",
+   "resourceGroup": "rg-prod-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "data@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Premium_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-sandbox/providers/Microsoft.Compute/virtualMachines/cb-labs-vm85",
+   "name": "cb-labs-vm85",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus2",
+   "resourceGroup": "rg-labs-sandbox",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D2s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-labs-vm85-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/deallocated"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-18"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-sandbox/providers/Microsoft.Compute/disks/cb-labs-vm85-osdisk",
+   "name": "cb-labs-vm85-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus2",
+   "resourceGroup": "rg-labs-sandbox",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Standard_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Reserved",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-data/providers/Microsoft.Compute/virtualMachines/cb-dev-vm86",
+   "name": "cb-dev-vm86",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus2",
+   "resourceGroup": "rg-dev-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "data@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D4s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-dev-vm86-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-11"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-data/providers/Microsoft.Compute/disks/cb-dev-vm86-osdisk",
+   "name": "cb-dev-vm86-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus2",
+   "resourceGroup": "rg-dev-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "data@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Premium_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-app/providers/Microsoft.Compute/virtualMachines/cb-prod-vm87",
+   "name": "cb-prod-vm87",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "centralus",
+   "resourceGroup": "rg-prod-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "dev-team@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_B2s"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-prod-vm87-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-18"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-app/providers/Microsoft.Compute/disks/cb-prod-vm87-osdisk",
+   "name": "cb-prod-vm87-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "centralus",
+   "resourceGroup": "rg-prod-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "dev-team@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Standard_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-sandbox/providers/Microsoft.Compute/virtualMachines/cb-dev-vm88",
+   "name": "cb-dev-vm88",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus",
+   "resourceGroup": "rg-dev-sandbox",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "prod",
+    "ExpirationDate": "2027-06-30",
+    "Owner": "rg-owner@carebridge.example"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D4s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-dev-vm88-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-16"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-sandbox/providers/Microsoft.Compute/disks/cb-dev-vm88-osdisk",
+   "name": "cb-dev-vm88-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus",
+   "resourceGroup": "rg-dev-sandbox",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "prod",
+    "ExpirationDate": "2027-06-30",
+    "Owner": "rg-owner@carebridge.example"
+   },
+   "sku": {
+    "name": "StandardSSD_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-app/providers/Microsoft.Compute/virtualMachines/cb-dev-vm89",
+   "name": "cb-dev-vm89",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus",
+   "resourceGroup": "rg-dev-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "data@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D2s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-dev-vm89-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-29"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-app/providers/Microsoft.Compute/disks/cb-dev-vm89-osdisk",
+   "name": "cb-dev-vm89-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus",
+   "resourceGroup": "rg-dev-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "data@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Premium_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-sandbox/providers/Microsoft.Compute/virtualMachines/cb-labs-vm91",
+   "name": "cb-labs-vm91",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus",
+   "resourceGroup": "rg-labs-sandbox",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D2s_v5"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-labs-vm91-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/deallocated"
+      }
+     }
+    },
+    "lastActivityDate": "2026-09-29"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-sandbox/providers/Microsoft.Compute/disks/cb-labs-vm91-osdisk",
+   "name": "cb-labs-vm91-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus",
+   "resourceGroup": "rg-labs-sandbox",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Premium_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Reserved",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-data/providers/Microsoft.Compute/virtualMachines/cb-labs-vm93",
+   "name": "cb-labs-vm93",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "centralus",
+   "resourceGroup": "rg-labs-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_B2s"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-labs-vm93-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/deallocated"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-09"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-data/providers/Microsoft.Compute/disks/cb-labs-vm93-osdisk",
+   "name": "cb-labs-vm93-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "centralus",
+   "resourceGroup": "rg-labs-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Standard_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Reserved",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-app/providers/Microsoft.Compute/virtualMachines/cb-prod-vm94",
+   "name": "cb-prod-vm94",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus",
+   "resourceGroup": "rg-prod-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "it-ops@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_B2s"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-prod-vm94-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-09-26"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-app/providers/Microsoft.Compute/disks/cb-prod-vm94-osdisk",
+   "name": "cb-prod-vm94-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus",
+   "resourceGroup": "rg-prod-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "it-ops@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Premium_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-legacy/providers/Microsoft.Compute/virtualMachines/cb-prod-vm95",
+   "name": "cb-prod-vm95",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus2",
+   "resourceGroup": "rg-prod-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_B2s"
+    },
+    "storageProfile": {
+     "osDisk": {
+      "name": "cb-prod-vm95-osdisk"
+     }
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/running"
+      }
+     }
+    },
+    "lastActivityDate": "2026-10-21"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-legacy/providers/Microsoft.Compute/disks/cb-prod-vm95-osdisk",
+   "name": "cb-prod-vm95-osdisk",
+   "type": "microsoft.compute/disks",
+   "location": "eastus2",
+   "resourceGroup": "rg-prod-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "sku": {
+    "name": "Premium_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Attached",
+    "timeCreated": "2025-03-01T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-legacy/providers/Microsoft.Compute/virtualMachines/cb-legacy-rds01",
+   "name": "cb-legacy-rds01",
+   "type": "microsoft.compute/virtualmachines",
+   "location": "eastus",
+   "resourceGroup": "rg-prod-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "security@brightline.example",
+    "ExpirationDate": "2027-02-01",
+    "Hold": "forensics"
+   },
+   "properties": {
+    "hardwareProfile": {
+     "vmSize": "Standard_D4s_v5"
+    },
+    "extended": {
+     "instanceView": {
+      "powerState": {
+       "code": "PowerState/deallocated"
+      }
+     }
+    },
+    "lastActivityDate": "2026-11-01"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-app/providers/Microsoft.Compute/disks/cb-orphan-disk00",
+   "name": "cb-orphan-disk00",
+   "type": "microsoft.compute/disks",
+   "location": "eastus",
+   "resourceGroup": "rg-labs-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "data@carebridge.example",
+    "ExpirationDate": "2027-01-31",
+    "Keep": "true"
+   },
+   "sku": {
+    "name": "StandardSSD_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 1024,
+    "diskState": "Unattached",
+    "timeCreated": "2026-07-25T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-app/providers/Microsoft.Compute/disks/cb-orphan-disk01",
+   "name": "cb-orphan-disk01",
+   "type": "microsoft.compute/disks",
+   "location": "centralus",
+   "resourceGroup": "rg-prod-app",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "data@carebridge.example",
+    "ExpirationDate": "2027-01-31",
+    "Keep": "true"
+   },
+   "sku": {
+    "name": "StandardSSD_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 127,
+    "diskState": "Unattached",
+    "timeCreated": "2026-04-02T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-legacy/providers/Microsoft.Compute/disks/cb-orphan-disk02",
+   "name": "cb-orphan-disk02",
+   "type": "microsoft.compute/disks",
+   "location": "centralus",
+   "resourceGroup": "rg-labs-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "data@carebridge.example",
+    "ExpirationDate": "2027-01-31",
+    "Keep": "true"
+   },
+   "sku": {
+    "name": "Standard_LRS"
+   },
+   "properties": {
+    "diskSizeGB": 1024,
+    "diskState": "Unattached",
+    "timeCreated": "2026-07-25T00:00:00Z"
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-net/providers/Microsoft.Network/networkSecurityGroups/cb-nsg00",
+   "name": "cb-nsg00",
+   "type": "microsoft.network/networksecuritygroups",
+   "location": "centralus",
+   "resourceGroup": "rg-labs-net",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "securityRules": [
+     {
+      "name": "allow-https",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "*",
+       "destinationPortRange": "443",
+       "priority": 100
+      }
+     },
+     {
+      "name": "allow-rdp-corp",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "10.20.0.0/16",
+       "destinationPortRange": "3389",
+       "priority": 110
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-net/providers/Microsoft.Network/networkSecurityGroups/cb-nsg01",
+   "name": "cb-nsg01",
+   "type": "microsoft.network/networksecuritygroups",
+   "location": "eastus2",
+   "resourceGroup": "rg-prod-net",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "securityRules": [
+     {
+      "name": "allow-https",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "*",
+       "destinationPortRange": "443",
+       "priority": 100
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-net/providers/Microsoft.Network/networkSecurityGroups/cb-nsg02",
+   "name": "cb-nsg02",
+   "type": "microsoft.network/networksecuritygroups",
+   "location": "eastus",
+   "resourceGroup": "rg-prod-net",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "dev-team@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "securityRules": [
+     {
+      "name": "allow-https",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "*",
+       "destinationPortRange": "443",
+       "priority": 100
+      }
+     },
+     {
+      "name": "allow-rdp-corp",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "10.20.0.0/16",
+       "destinationPortRange": "3389",
+       "priority": 110
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-net/providers/Microsoft.Network/networkSecurityGroups/cb-nsg03",
+   "name": "cb-nsg03",
+   "type": "microsoft.network/networksecuritygroups",
+   "location": "eastus",
+   "resourceGroup": "rg-prod-net",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "dev",
+    "ExpirationDate": "2027-06-30",
+    "Owner": "rg-owner@carebridge.example"
+   },
+   "properties": {
+    "securityRules": [
+     {
+      "name": "allow-https",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "*",
+       "destinationPortRange": "443",
+       "priority": 100
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-net/providers/Microsoft.Network/networkSecurityGroups/cb-nsg04",
+   "name": "cb-nsg04",
+   "type": "microsoft.network/networksecuritygroups",
+   "location": "centralus",
+   "resourceGroup": "rg-prod-net",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "it-ops@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "securityRules": [
+     {
+      "name": "allow-https",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "*",
+       "destinationPortRange": "443",
+       "priority": 100
+      }
+     },
+     {
+      "name": "allow-rdp-corp",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "10.20.0.0/16",
+       "destinationPortRange": "3389",
+       "priority": 110
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-net/providers/Microsoft.Network/networkSecurityGroups/cb-nsg05",
+   "name": "cb-nsg05",
+   "type": "microsoft.network/networksecuritygroups",
+   "location": "eastus2",
+   "resourceGroup": "rg-labs-net",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "securityRules": [
+     {
+      "name": "allow-https",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "*",
+       "destinationPortRange": "443",
+       "priority": 100
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-net/providers/Microsoft.Network/networkSecurityGroups/cb-nsg06",
+   "name": "cb-nsg06",
+   "type": "microsoft.network/networksecuritygroups",
+   "location": "eastus2",
+   "resourceGroup": "rg-labs-net",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "securityRules": [
+     {
+      "name": "allow-https",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "*",
+       "destinationPortRange": "443",
+       "priority": 100
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-net/providers/Microsoft.Network/networkSecurityGroups/cb-nsg07",
+   "name": "cb-nsg07",
+   "type": "microsoft.network/networksecuritygroups",
+   "location": "eastus2",
+   "resourceGroup": "rg-labs-net",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "securityRules": [
+     {
+      "name": "allow-https",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "*",
+       "destinationPortRange": "443",
+       "priority": 100
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-net/providers/Microsoft.Network/networkSecurityGroups/cb-nsg08",
+   "name": "cb-nsg08",
+   "type": "microsoft.network/networksecuritygroups",
+   "location": "eastus2",
+   "resourceGroup": "rg-prod-net",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "dev-team@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "securityRules": [
+     {
+      "name": "allow-https",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "*",
+       "destinationPortRange": "443",
+       "priority": 100
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-net/providers/Microsoft.Network/networkSecurityGroups/cb-nsg09",
+   "name": "cb-nsg09",
+   "type": "microsoft.network/networksecuritygroups",
+   "location": "eastus2",
+   "resourceGroup": "rg-labs-net",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "lab",
+    "ExpirationDate": "2027-06-30",
+    "Owner": "rg-owner@carebridge.example"
+   },
+   "properties": {
+    "securityRules": [
+     {
+      "name": "allow-https",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "*",
+       "destinationPortRange": "443",
+       "priority": 100
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-net/providers/Microsoft.Network/networkSecurityGroups/cb-nsg10",
+   "name": "cb-nsg10",
+   "type": "microsoft.network/networksecuritygroups",
+   "location": "centralus",
+   "resourceGroup": "rg-dev-net",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "dev",
+    "ExpirationDate": "2027-06-30",
+    "Owner": "rg-owner@carebridge.example"
+   },
+   "properties": {
+    "securityRules": [
+     {
+      "name": "allow-https",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "*",
+       "destinationPortRange": "443",
+       "priority": 100
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-net/providers/Microsoft.Network/networkSecurityGroups/cb-nsg11",
+   "name": "cb-nsg11",
+   "type": "microsoft.network/networksecuritygroups",
+   "location": "eastus2",
+   "resourceGroup": "rg-labs-net",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "dev-team@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "securityRules": [
+     {
+      "name": "allow-https",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "*",
+       "destinationPortRange": "443",
+       "priority": 100
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-net/providers/Microsoft.Network/networkSecurityGroups/cb-nsg12",
+   "name": "cb-nsg12",
+   "type": "microsoft.network/networksecuritygroups",
+   "location": "eastus",
+   "resourceGroup": "rg-dev-net",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "data@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "securityRules": [
+     {
+      "name": "allow-https",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "*",
+       "destinationPortRange": "443",
+       "priority": 100
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-net/providers/Microsoft.Network/networkSecurityGroups/cb-nsg13",
+   "name": "cb-nsg13",
+   "type": "microsoft.network/networksecuritygroups",
+   "location": "eastus2",
+   "resourceGroup": "rg-prod-net",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "securityRules": [
+     {
+      "name": "allow-https",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "*",
+       "destinationPortRange": "443",
+       "priority": 100
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-net/providers/Microsoft.Network/networkSecurityGroups/cb-nsg14",
+   "name": "cb-nsg14",
+   "type": "microsoft.network/networksecuritygroups",
+   "location": "centralus",
+   "resourceGroup": "rg-prod-net",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "securityRules": [
+     {
+      "name": "allow-https",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "*",
+       "destinationPortRange": "443",
+       "priority": 100
+      }
+     },
+     {
+      "name": "allow-rdp-corp",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "10.20.0.0/16",
+       "destinationPortRange": "3389",
+       "priority": 110
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-net/providers/Microsoft.Network/networkSecurityGroups/cb-nsg15",
+   "name": "cb-nsg15",
+   "type": "microsoft.network/networksecuritygroups",
+   "location": "eastus2",
+   "resourceGroup": "rg-labs-net",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "securityRules": [
+     {
+      "name": "allow-https",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "*",
+       "destinationPortRange": "443",
+       "priority": 100
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-net/providers/Microsoft.Network/networkSecurityGroups/cb-nsg16",
+   "name": "cb-nsg16",
+   "type": "microsoft.network/networksecuritygroups",
+   "location": "eastus2",
+   "resourceGroup": "rg-dev-net",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "dev-team@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "securityRules": [
+     {
+      "name": "allow-https",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "*",
+       "destinationPortRange": "443",
+       "priority": 100
+      }
+     },
+     {
+      "name": "allow-rdp-corp",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "10.20.0.0/16",
+       "destinationPortRange": "3389",
+       "priority": 110
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-net/providers/Microsoft.Network/networkSecurityGroups/cb-nsg17",
+   "name": "cb-nsg17",
+   "type": "microsoft.network/networksecuritygroups",
+   "location": "eastus2",
+   "resourceGroup": "rg-labs-net",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "dev-team@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "securityRules": [
+     {
+      "name": "allow-https",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "*",
+       "destinationPortRange": "443",
+       "priority": 100
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-net/providers/Microsoft.Network/networkSecurityGroups/cb-nsg18",
+   "name": "cb-nsg18",
+   "type": "microsoft.network/networksecuritygroups",
+   "location": "eastus",
+   "resourceGroup": "rg-prod-net",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "lab",
+    "ExpirationDate": "2027-06-30",
+    "Owner": "rg-owner@carebridge.example"
+   },
+   "properties": {
+    "securityRules": [
+     {
+      "name": "allow-https",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "*",
+       "destinationPortRange": "443",
+       "priority": 100
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-net/providers/Microsoft.Network/networkSecurityGroups/cb-nsg19",
+   "name": "cb-nsg19",
+   "type": "microsoft.network/networksecuritygroups",
+   "location": "eastus",
+   "resourceGroup": "rg-labs-net",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "dev-team@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "securityRules": [
+     {
+      "name": "allow-https",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "*",
+       "destinationPortRange": "443",
+       "priority": 100
+      }
+     },
+     {
+      "name": "allow-rdp-corp",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "10.20.0.0/16",
+       "destinationPortRange": "3389",
+       "priority": 110
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-net/providers/Microsoft.Network/networkSecurityGroups/cb-nsg20",
+   "name": "cb-nsg20",
+   "type": "microsoft.network/networksecuritygroups",
+   "location": "centralus",
+   "resourceGroup": "rg-dev-net",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "securityRules": [
+     {
+      "name": "allow-https",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "*",
+       "destinationPortRange": "443",
+       "priority": 100
+      }
+     },
+     {
+      "name": "allow-rdp-corp",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "10.20.0.0/16",
+       "destinationPortRange": "3389",
+       "priority": 110
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-net/providers/Microsoft.Network/networkSecurityGroups/cb-nsg21",
+   "name": "cb-nsg21",
+   "type": "microsoft.network/networksecuritygroups",
+   "location": "centralus",
+   "resourceGroup": "rg-prod-net",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "data@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "securityRules": [
+     {
+      "name": "allow-https",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "*",
+       "destinationPortRange": "443",
+       "priority": 100
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-net/providers/Microsoft.Network/networkSecurityGroups/cb-nsg22",
+   "name": "cb-nsg22",
+   "type": "microsoft.network/networksecuritygroups",
+   "location": "centralus",
+   "resourceGroup": "rg-prod-net",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "it-ops@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "securityRules": [
+     {
+      "name": "allow-https",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "*",
+       "destinationPortRange": "443",
+       "priority": 100
+      }
+     },
+     {
+      "name": "allow-rdp-corp",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "10.20.0.0/16",
+       "destinationPortRange": "3389",
+       "priority": 110
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-net/providers/Microsoft.Network/networkSecurityGroups/cb-nsg23",
+   "name": "cb-nsg23",
+   "type": "microsoft.network/networksecuritygroups",
+   "location": "eastus",
+   "resourceGroup": "rg-prod-net",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "it-ops@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "securityRules": [
+     {
+      "name": "allow-https",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "*",
+       "destinationPortRange": "443",
+       "priority": 100
+      }
+     },
+     {
+      "name": "allow-rdp-corp",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "10.20.0.0/16",
+       "destinationPortRange": "3389",
+       "priority": 110
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-net/providers/Microsoft.Network/networkSecurityGroups/cb-nsg24",
+   "name": "cb-nsg24",
+   "type": "microsoft.network/networksecuritygroups",
+   "location": "centralus",
+   "resourceGroup": "rg-prod-net",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "securityRules": [
+     {
+      "name": "allow-https",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "*",
+       "destinationPortRange": "443",
+       "priority": 100
+      }
+     },
+     {
+      "name": "allow-rdp-corp",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "10.20.0.0/16",
+       "destinationPortRange": "3389",
+       "priority": 110
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-net/providers/Microsoft.Network/networkSecurityGroups/cb-nsg25",
+   "name": "cb-nsg25",
+   "type": "microsoft.network/networksecuritygroups",
+   "location": "eastus2",
+   "resourceGroup": "rg-labs-net",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "data@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "securityRules": [
+     {
+      "name": "allow-https",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "*",
+       "destinationPortRange": "443",
+       "priority": 100
+      }
+     },
+     {
+      "name": "allow-rdp-corp",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "10.20.0.0/16",
+       "destinationPortRange": "3389",
+       "priority": 110
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-net/providers/Microsoft.Network/networkSecurityGroups/cb-nsg26",
+   "name": "cb-nsg26",
+   "type": "microsoft.network/networksecuritygroups",
+   "location": "eastus2",
+   "resourceGroup": "rg-dev-net",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "securityRules": [
+     {
+      "name": "allow-https",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "*",
+       "destinationPortRange": "443",
+       "priority": 100
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-net/providers/Microsoft.Network/networkSecurityGroups/cb-nsg27",
+   "name": "cb-nsg27",
+   "type": "microsoft.network/networksecuritygroups",
+   "location": "centralus",
+   "resourceGroup": "rg-labs-net",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "prod",
+    "ExpirationDate": "2027-06-30",
+    "Owner": "rg-owner@carebridge.example"
+   },
+   "properties": {
+    "securityRules": [
+     {
+      "name": "allow-https",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "*",
+       "destinationPortRange": "443",
+       "priority": 100
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-net/providers/Microsoft.Network/networkSecurityGroups/cb-nsg28",
+   "name": "cb-nsg28",
+   "type": "microsoft.network/networksecuritygroups",
+   "location": "eastus2",
+   "resourceGroup": "rg-dev-net",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "it-ops@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "securityRules": [
+     {
+      "name": "allow-https",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "*",
+       "destinationPortRange": "443",
+       "priority": 100
+      }
+     },
+     {
+      "name": "allow-rdp-corp",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "10.20.0.0/16",
+       "destinationPortRange": "3389",
+       "priority": 110
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-net/providers/Microsoft.Network/networkSecurityGroups/cb-nsg29",
+   "name": "cb-nsg29",
+   "type": "microsoft.network/networksecuritygroups",
+   "location": "eastus2",
+   "resourceGroup": "rg-prod-net",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "prod",
+    "ExpirationDate": "2027-06-30",
+    "Owner": "rg-owner@carebridge.example"
+   },
+   "properties": {
+    "securityRules": [
+     {
+      "name": "allow-https",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "*",
+       "destinationPortRange": "443",
+       "priority": 100
+      }
+     },
+     {
+      "name": "allow-rdp-corp",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "10.20.0.0/16",
+       "destinationPortRange": "3389",
+       "priority": 110
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000003/resourceGroups/rg-labs-net/providers/Microsoft.Network/networkSecurityGroups/cb-nsg30",
+   "name": "cb-nsg30",
+   "type": "microsoft.network/networksecuritygroups",
+   "location": "eastus",
+   "resourceGroup": "rg-labs-net",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000003",
+   "tags": {
+    "Environment": "dev",
+    "ExpirationDate": "2027-06-30",
+    "Owner": "rg-owner@carebridge.example"
+   },
+   "properties": {
+    "securityRules": [
+     {
+      "name": "allow-https",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "*",
+       "destinationPortRange": "443",
+       "priority": 100
+      }
+     },
+     {
+      "name": "allow-rdp-corp",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "10.20.0.0/16",
+       "destinationPortRange": "3389",
+       "priority": 110
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-dev-net/providers/Microsoft.Network/networkSecurityGroups/cb-nsg31",
+   "name": "cb-nsg31",
+   "type": "microsoft.network/networksecuritygroups",
+   "location": "eastus",
+   "resourceGroup": "rg-dev-net",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "securityRules": [
+     {
+      "name": "allow-https",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "*",
+       "destinationPortRange": "443",
+       "priority": 100
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-net/providers/Microsoft.Network/networkSecurityGroups/cb-nsg32",
+   "name": "cb-nsg32",
+   "type": "microsoft.network/networksecuritygroups",
+   "location": "eastus",
+   "resourceGroup": "rg-prod-net",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "it-ops@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "securityRules": [
+     {
+      "name": "allow-https",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "*",
+       "destinationPortRange": "443",
+       "priority": 100
+      }
+     },
+     {
+      "name": "allow-rdp-corp",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "10.20.0.0/16",
+       "destinationPortRange": "3389",
+       "priority": 110
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-net/providers/Microsoft.Network/networkSecurityGroups/cb-nsg33",
+   "name": "cb-nsg33",
+   "type": "microsoft.network/networksecuritygroups",
+   "location": "eastus",
+   "resourceGroup": "rg-prod-net",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "it-ops@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "securityRules": [
+     {
+      "name": "allow-https",
+      "properties": {
+       "access": "Allow",
+       "direction": "Inbound",
+       "protocol": "Tcp",
+       "sourceAddressPrefix": "*",
+       "destinationPortRange": "443",
+       "priority": 100
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-prod-legacy/providers/Microsoft.Network/networkSecurityGroups/cb-legacy-rds01-nsg",
+   "name": "cb-legacy-rds01-nsg",
+   "type": "microsoft.network/networksecuritygroups",
+   "location": "eastus",
+   "resourceGroup": "rg-prod-legacy",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "securityRules": []
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-data/providers/Microsoft.Storage/storageAccounts/cbpatientintake",
+   "name": "cbpatientintake",
+   "type": "microsoft.storage/storageaccounts",
+   "location": "eastus",
+   "resourceGroup": "rg-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "dev-team@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "allowBlobPublicAccess": false,
+    "minimumTlsVersion": "TLS1_2",
+    "supportsHttpsTrafficOnly": true
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-data/providers/Microsoft.Storage/storageAccounts/cbreportsexport",
+   "name": "cbreportsexport",
+   "type": "microsoft.storage/storageaccounts",
+   "location": "eastus",
+   "resourceGroup": "rg-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "allowBlobPublicAccess": false,
+    "minimumTlsVersion": "TLS1_2",
+    "supportsHttpsTrafficOnly": true
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-data/providers/Microsoft.Storage/storageAccounts/cbfrontendassets",
+   "name": "cbfrontendassets",
+   "type": "microsoft.storage/storageaccounts",
+   "location": "eastus",
+   "resourceGroup": "rg-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "dev",
+    "Owner": "dev-team@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "allowBlobPublicAccess": false,
+    "minimumTlsVersion": "TLS1_2",
+    "supportsHttpsTrafficOnly": true
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-data/providers/Microsoft.Storage/storageAccounts/cbdevscratch",
+   "name": "cbdevscratch",
+   "type": "microsoft.storage/storageaccounts",
+   "location": "eastus",
+   "resourceGroup": "rg-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "it-ops@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "allowBlobPublicAccess": false,
+    "minimumTlsVersion": "TLS1_2",
+    "supportsHttpsTrafficOnly": true
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-data/providers/Microsoft.Storage/storageAccounts/cbbackupsprod",
+   "name": "cbbackupsprod",
+   "type": "microsoft.storage/storageaccounts",
+   "location": "eastus",
+   "resourceGroup": "rg-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "dev-team@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "allowBlobPublicAccess": false,
+    "minimumTlsVersion": "TLS1_2",
+    "supportsHttpsTrafficOnly": true
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000001/resourceGroups/rg-data/providers/Microsoft.Storage/storageAccounts/cblogsarchive",
+   "name": "cblogsarchive",
+   "type": "microsoft.storage/storageaccounts",
+   "location": "eastus",
+   "resourceGroup": "rg-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000001",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "data@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "allowBlobPublicAccess": false,
+    "minimumTlsVersion": "TLS1_2",
+    "supportsHttpsTrafficOnly": true
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-data/providers/Microsoft.Storage/storageAccounts/cbmlsandbox",
+   "name": "cbmlsandbox",
+   "type": "microsoft.storage/storageaccounts",
+   "location": "eastus",
+   "resourceGroup": "rg-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "lab",
+    "Owner": "rg-owner@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "allowBlobPublicAccess": false,
+    "minimumTlsVersion": "TLS1_2",
+    "supportsHttpsTrafficOnly": true
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-data/providers/Microsoft.Storage/storageAccounts/cbwebstatic",
+   "name": "cbwebstatic",
+   "type": "microsoft.storage/storageaccounts",
+   "location": "eastus",
+   "resourceGroup": "rg-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "dev-team@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "allowBlobPublicAccess": false,
+    "minimumTlsVersion": "TLS1_2",
+    "supportsHttpsTrafficOnly": true
+   }
+  },
+  {
+   "id": "/subscriptions/11111111-aaaa-4000-8000-000000000002/resourceGroups/rg-data/providers/Microsoft.Storage/storageAccounts/cbetlstaging",
+   "name": "cbetlstaging",
+   "type": "microsoft.storage/storageaccounts",
+   "location": "eastus",
+   "resourceGroup": "rg-data",
+   "subscriptionId": "11111111-aaaa-4000-8000-000000000002",
+   "tags": {
+    "Environment": "prod",
+    "Owner": "it-ops@carebridge.example",
+    "ExpirationDate": "2027-06-30"
+   },
+   "properties": {
+    "allowBlobPublicAccess": false,
+    "minimumTlsVersion": "TLS1_2",
+    "supportsHttpsTrafficOnly": true
+   }
+  }
+ ]
+}

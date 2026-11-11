@@ -1,0 +1,12 @@
+// Log Analytics (SecurityEvent): successful logon from an IP that was brute-forcing, then account creation
+let attackers = SecurityEvent
+    | where TimeGenerated > ago(7d)
+    | where EventID == 4625 and not(ipv4_is_private(IpAddress))
+    | summarize failures = count() by IpAddress
+    | where failures > 50;
+SecurityEvent
+| where TimeGenerated > ago(7d)
+| where EventID in (4624, 4720, 4732)          // logon success, user created, added to local group
+| join kind=inner attackers on IpAddress
+| project TimeGenerated, Computer, EventID, TargetAccount, IpAddress, failures
+| order by TimeGenerated asc

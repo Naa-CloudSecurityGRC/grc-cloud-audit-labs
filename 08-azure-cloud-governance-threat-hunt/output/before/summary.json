@@ -1,0 +1,21 @@
+{
+ "orphaned_disks": 21,
+ "orphaned_disk_gb": 7670,
+ "orphaned_disk_usd_month": 598.1,
+ "deallocated_vms": 31,
+ "deallocated_over45": 25,
+ "deallocated_over45_usd_month": 306.65,
+ "open_mgmt_rules": 20,
+ "open_rdp": 13,
+ "open_ssh": 6,
+ "open_all": 1,
+ "storage_issues": 5,
+ "storage_public": 4,
+ "storage_weak_tls": 3,
+ "storage_http": 1,
+ "untagged": 224,
+ "total_resources": 258,
+ "bruteforce_ips": 3,
+ "bruteforce_failures": 14100,
+ "compromise_events": 3
+}

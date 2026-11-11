@@ -1,0 +1,18 @@
+{
+ "orphaned_disks": 3,
+ "orphaned_disk_gb": 2175,
+ "orphaned_disk_usd_month": 132.41,
+ "deallocated_vms": 10,
+ "deallocated_over45": 3,
+ "deallocated_over45_usd_month": 36.2,
+ "open_mgmt_rules": 0,
+ "open_rdp": 0,
+ "open_ssh": 0,
+ "open_all": 0,
+ "storage_issues": 0,
+ "storage_public": 0,
+ "storage_weak_tls": 0,
+ "storage_http": 0,
+ "untagged": 0,
+ "total_resources": 196
+}

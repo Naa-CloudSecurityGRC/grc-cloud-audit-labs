@@ -1,0 +1,14 @@
+// Azure Resource Graph: inbound NSG rules allowing SSH (22), RDP (3389) or all ports from the internet
+Resources
+| where type =~ 'microsoft.network/networksecuritygroups'
+| mv-expand rule = properties.securityRules
+| extend access    = tostring(rule.properties.access),
+         direction = tostring(rule.properties.direction),
+         src       = tostring(rule.properties.sourceAddressPrefix),
+         port      = tostring(rule.properties.destinationPortRange),
+         ruleName  = tostring(rule.name)
+| where access =~ 'Allow' and direction =~ 'Inbound'
+| where src in~ ('*', '0.0.0.0/0', 'Internet', 'Any')
+| where port in ('22', '3389', '*')
+| project subscriptionId, resourceGroup, nsg = name, ruleName, src, port
+// Note: also review destinationPortRanges (arrays) and port ranges such as 3380-3400 in a full audit.

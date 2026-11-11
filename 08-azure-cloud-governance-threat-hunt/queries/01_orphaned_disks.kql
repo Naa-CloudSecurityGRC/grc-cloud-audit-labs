@@ -1,0 +1,10 @@
+// Azure Resource Graph: managed disks not attached to any VM (billed with no compute)
+Resources
+| where type =~ 'microsoft.compute/disks'
+| where tostring(properties.diskState) =~ 'Unattached'
+| project subscriptionId, resourceGroup, name, location,
+          sku = tostring(sku.name),
+          sizeGB = toint(properties.diskSizeGB),
+          created = todatetime(properties.timeCreated),
+          owner = tostring(tags['Owner'])
+| order by sizeGB desc

@@ -1,0 +1,8 @@
+// Azure Resource Graph: storage accounts allowing anonymous blob access, weak TLS, or HTTP
+Resources
+| where type =~ 'microsoft.storage/storageaccounts'
+| extend publicAccess = tobool(properties.allowBlobPublicAccess),
+         minTls       = tostring(properties.minimumTlsVersion),
+         httpsOnly    = tobool(properties.supportsHttpsTrafficOnly)
+| where publicAccess == true or minTls in ('TLS1_0', 'TLS1_1') or httpsOnly == false
+| project subscriptionId, resourceGroup, name, publicAccess, minTls, httpsOnly

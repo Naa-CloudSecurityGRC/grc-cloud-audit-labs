@@ -1,0 +1,38 @@
+{
+  "properties": {
+    "displayName": "Inherit Owner and ExpirationDate tags from the resource group",
+    "policyType": "Custom",
+    "mode": "Indexed",
+    "description": "Copies Owner and ExpirationDate from the resource group to resources that don't have them. Run a remediation task after assignment to fix existing resources.",
+    "metadata": { "category": "Tags", "version": "1.0.0" },
+    "parameters": {},
+    "policyRule": {
+      "if": {
+        "anyOf": [
+          {
+            "allOf": [
+              { "field": "tags['Owner']", "exists": "false" },
+              { "value": "[resourceGroup().tags['Owner']]", "notEquals": "" }
+            ]
+          },
+          {
+            "allOf": [
+              { "field": "tags['ExpirationDate']", "exists": "false" },
+              { "value": "[resourceGroup().tags['ExpirationDate']]", "notEquals": "" }
+            ]
+          }
+        ]
+      },
+      "then": {
+        "effect": "modify",
+        "details": {
+          "roleDefinitionIds": [ "/providers/Microsoft.Authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c" ],
+          "operations": [
+            { "operation": "add", "field": "tags['Owner']", "value": "[resourceGroup().tags['Owner']]" },
+            { "operation": "add", "field": "tags['ExpirationDate']", "value": "[resourceGroup().tags['ExpirationDate']]" }
+          ]
+        }
+      }
+    }
+  }
+}

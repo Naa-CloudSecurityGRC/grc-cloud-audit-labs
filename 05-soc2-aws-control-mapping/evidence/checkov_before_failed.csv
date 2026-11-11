@@ -1,0 +1,35 @@
+check_id,resource,check_name
+CKV_AWS_36,aws_cloudtrail.main,Ensure CloudTrail log file validation is enabled
+CKV_AWS_67,aws_cloudtrail.main,Ensure CloudTrail is enabled in all Regions
+CKV_AWS_252,aws_cloudtrail.main,Ensure CloudTrail defines an SNS Topic
+CKV_AWS_35,aws_cloudtrail.main,Ensure CloudTrail logs are encrypted at rest using KMS CMKs
+CKV_AWS_273,aws_iam_user.deploy,Ensure access is controlled through SSO and not AWS IAM defined users
+CKV_AWS_40,aws_iam_user_policy_attachment.deploy_admin,Ensure IAM policies are attached only to groups or roles (Reducing access management complexity may in-turn reduce opportunity for a principal to inadvertently receive or retain excessive privileges.)
+CKV_AWS_274,aws_iam_user_policy_attachment.deploy_admin,"Disallow IAM roles, users, and groups from using the AWS AdministratorAccess policy"
+CKV_AWS_16,aws_db_instance.app,Ensure all data stored in the RDS is securely encrypted at rest
+CKV_AWS_293,aws_db_instance.app,Ensure that AWS database instances have deletion protection enabled
+CKV_AWS_17,aws_db_instance.app,Ensure all data stored in RDS is not publicly accessible
+CKV_AWS_133,aws_db_instance.app,Ensure that RDS instances has backup policy
+CKV_AWS_157,aws_db_instance.app,Ensure that RDS instances have Multi-AZ enabled
+CKV_AWS_353,aws_db_instance.app,Ensure that RDS instances have performance insights enabled
+CKV_AWS_118,aws_db_instance.app,Ensure that enhanced monitoring is enabled for Amazon RDS instances
+CKV_AWS_226,aws_db_instance.app,Ensure DB instance gets all minor upgrades automatically
+CKV_AWS_129,aws_db_instance.app,Ensure that respective logs of Amazon Relational Database Service (Amazon RDS) are enabled
+CKV_AWS_161,aws_db_instance.app,Ensure RDS database has IAM authentication enabled
+CKV2_AWS_60,aws_db_instance.app,Ensure RDS instance with copy tags to snapshots is enabled
+CKV2_AWS_6,aws_s3_bucket.patient_documents,Ensure that S3 bucket has a Public Access block
+CKV2_AWS_6,aws_s3_bucket.trail_logs,Ensure that S3 bucket has a Public Access block
+CKV2_AWS_62,aws_s3_bucket.patient_documents,Ensure S3 buckets should have event notifications enabled
+CKV2_AWS_62,aws_s3_bucket.trail_logs,Ensure S3 buckets should have event notifications enabled
+CKV2_AWS_30,aws_db_instance.app,Ensure Postgres RDS as aws_db_instance has Query Logging enabled
+CKV2_AWS_10,aws_cloudtrail.main,Ensure CloudTrail trails are integrated with CloudWatch Logs
+CKV2_AWS_61,aws_s3_bucket.patient_documents,Ensure that an S3 bucket has a lifecycle configuration
+CKV2_AWS_61,aws_s3_bucket.trail_logs,Ensure that an S3 bucket has a lifecycle configuration
+CKV_AWS_18,aws_s3_bucket.patient_documents,Ensure the S3 bucket has access logging enabled
+CKV_AWS_18,aws_s3_bucket.trail_logs,Ensure the S3 bucket has access logging enabled
+CKV_AWS_144,aws_s3_bucket.patient_documents,Ensure that S3 bucket has cross-region replication enabled
+CKV_AWS_144,aws_s3_bucket.trail_logs,Ensure that S3 bucket has cross-region replication enabled
+CKV_AWS_145,aws_s3_bucket.patient_documents,Ensure that S3 buckets are encrypted with KMS by default
+CKV_AWS_145,aws_s3_bucket.trail_logs,Ensure that S3 buckets are encrypted with KMS by default
+CKV_AWS_21,aws_s3_bucket.patient_documents,Ensure all data stored in the S3 bucket have versioning enabled
+CKV_AWS_21,aws_s3_bucket.trail_logs,Ensure all data stored in the S3 bucket have versioning enabled

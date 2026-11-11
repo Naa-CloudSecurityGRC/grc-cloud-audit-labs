@@ -1,0 +1,7 @@
+// Log Analytics (AzureActivity): last management activity per VM, to confirm inactivity > 45 days
+AzureActivity
+| where TimeGenerated > ago(90d)
+| where ResourceProviderValue =~ 'MICROSOFT.COMPUTE'
+| where _ResourceId has '/virtualmachines/'
+| summarize lastActivity = max(TimeGenerated) by vm = tostring(split(_ResourceId, '/')[8])
+| where lastActivity < ago(45d)

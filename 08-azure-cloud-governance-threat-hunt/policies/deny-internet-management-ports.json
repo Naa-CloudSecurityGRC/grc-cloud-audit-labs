@@ -1,0 +1,56 @@
+{
+  "properties": {
+    "displayName": "Deny inbound SSH, RDP or all ports from the internet in NSG rules",
+    "policyType": "Custom",
+    "mode": "All",
+    "description": "Blocks NSG rules that allow TCP 22, 3389 or any port from *, Internet or 0.0.0.0/0. Use Azure Bastion or Just-In-Time VM access instead.",
+    "metadata": { "category": "Network", "version": "1.0.0" },
+    "parameters": {
+      "effect": {
+        "type": "String",
+        "allowedValues": [ "Audit", "Deny", "Disabled" ],
+        "defaultValue": "Deny"
+      }
+    },
+    "policyRule": {
+      "if": {
+        "anyOf": [
+          {
+            "allOf": [
+              { "field": "type", "equals": "Microsoft.Network/networkSecurityGroups/securityRules" },
+              { "field": "Microsoft.Network/networkSecurityGroups/securityRules/access", "equals": "Allow" },
+              { "field": "Microsoft.Network/networkSecurityGroups/securityRules/direction", "equals": "Inbound" },
+              { "field": "Microsoft.Network/networkSecurityGroups/securityRules/sourceAddressPrefix", "in": [ "*", "Internet", "0.0.0.0/0" ] },
+              {
+                "anyOf": [
+                  { "field": "Microsoft.Network/networkSecurityGroups/securityRules/destinationPortRange", "in": [ "22", "3389", "*" ] },
+                  { "count": { "field": "Microsoft.Network/networkSecurityGroups/securityRules/destinationPortRanges[*]", "where": { "field": "Microsoft.Network/networkSecurityGroups/securityRules/destinationPortRanges[*]", "in": [ "22", "3389" ] } }, "greater": 0 }
+                ]
+              }
+            ]
+          },
+          {
+            "allOf": [
+              { "field": "type", "equals": "Microsoft.Network/networkSecurityGroups" },
+              {
+                "count": {
+                  "field": "Microsoft.Network/networkSecurityGroups/securityRules[*]",
+                  "where": {
+                    "allOf": [
+                      { "field": "Microsoft.Network/networkSecurityGroups/securityRules[*].access", "equals": "Allow" },
+                      { "field": "Microsoft.Network/networkSecurityGroups/securityRules[*].direction", "equals": "Inbound" },
+                      { "field": "Microsoft.Network/networkSecurityGroups/securityRules[*].sourceAddressPrefix", "in": [ "*", "Internet", "0.0.0.0/0" ] },
+                      { "field": "Microsoft.Network/networkSecurityGroups/securityRules[*].destinationPortRange", "in": [ "22", "3389", "*" ] }
+                    ]
+                  }
+                },
+                "greater": 0
+              }
+            ]
+          }
+        ]
+      },
+      "then": { "effect": "[parameters('effect')]" }
+    }
+  }
+}

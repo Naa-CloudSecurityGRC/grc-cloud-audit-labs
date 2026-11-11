@@ -1,0 +1,6 @@
+sub,account,allowBlobPublicAccess,minimumTls,httpsOnly
+1,cbpatientintake,True,TLS1_2,True
+1,cbreportsexport,True,TLS1_0,True
+1,cbfrontendassets,True,TLS1_2,True
+1,cbdevscratch,True,TLS1_0,False
+2,cbmlsandbox,False,TLS1_1,True

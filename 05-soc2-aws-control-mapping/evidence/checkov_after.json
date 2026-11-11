@@ -1,0 +1,557 @@
+{
+    "check_type": "terraform",
+    "results": {
+        "failed_checks": [
+            {
+                "check_id": "CKV_AWS_252",
+                "bc_check_id": null,
+                "check_name": "Ensure CloudTrail defines an SNS Topic",
+                "check_result": {
+                    "result": "FAILED",
+                    "evaluated_keys": [
+                        "sns_topic_name"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/main.tf",
+                "file_abs_path": "/home/claude/repo/grc-cloud-audit-labs/05-soc2-aws-control-mapping/terraform/after/main.tf",
+                "repo_file_path": "/terraform/after/main.tf",
+                "file_line_range": [
+                    157,
+                    165
+                ],
+                "resource": "aws_cloudtrail.main",
+                "evaluations": null,
+                "check_class": "checkov.terraform.checks.resource.aws.CloudtrailDefinesSNSTopic",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": {},
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": null,
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/claude/repo/grc-cloud-audit-labs/05-soc2-aws-control-mapping/terraform/after/main.tf"
+            },
+            {
+                "check_id": "CKV2_AWS_62",
+                "bc_check_id": null,
+                "check_name": "Ensure S3 buckets should have event notifications enabled",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_s3_bucket": {
+                            "patient_documents": {
+                                "__end_line__": 51,
+                                "__start_line__": 49,
+                                "bucket": [
+                                    "brightline-patient-documents"
+                                ],
+                                "__address__": "aws_s3_bucket.patient_documents",
+                                "__provider_address__": "aws.default"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "resource_type"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/main.tf",
+                "file_abs_path": "/home/claude/repo/grc-cloud-audit-labs/05-soc2-aws-control-mapping/terraform/after/main.tf",
+                "repo_file_path": "/terraform/after/main.tf",
+                "file_line_range": [
+                    49,
+                    51
+                ],
+                "resource": "aws_s3_bucket.patient_documents",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": {},
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": null,
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/claude/repo/grc-cloud-audit-labs/05-soc2-aws-control-mapping/terraform/after/main.tf"
+            },
+            {
+                "check_id": "CKV2_AWS_62",
+                "bc_check_id": null,
+                "check_name": "Ensure S3 buckets should have event notifications enabled",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_s3_bucket": {
+                            "trail_logs": {
+                                "__end_line__": 88,
+                                "__start_line__": 86,
+                                "bucket": [
+                                    "brightline-cloudtrail-logs"
+                                ],
+                                "__address__": "aws_s3_bucket.trail_logs",
+                                "__provider_address__": "aws.default"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "resource_type"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/main.tf",
+                "file_abs_path": "/home/claude/repo/grc-cloud-audit-labs/05-soc2-aws-control-mapping/terraform/after/main.tf",
+                "repo_file_path": "/terraform/after/main.tf",
+                "file_line_range": [
+                    86,
+                    88
+                ],
+                "resource": "aws_s3_bucket.trail_logs",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": {},
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": null,
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/claude/repo/grc-cloud-audit-labs/05-soc2-aws-control-mapping/terraform/after/main.tf"
+            },
+            {
+                "check_id": "CKV2_AWS_30",
+                "bc_check_id": null,
+                "check_name": "Ensure Postgres RDS as aws_db_instance has Query Logging enabled",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_db_instance": {
+                            "app": {
+                                "__end_line__": 222,
+                                "__start_line__": 199,
+                                "allocated_storage": [
+                                    20
+                                ],
+                                "auto_minor_version_upgrade": [
+                                    true
+                                ],
+                                "backup_retention_period": [
+                                    35
+                                ],
+                                "copy_tags_to_snapshot": [
+                                    true
+                                ],
+                                "deletion_protection": [
+                                    true
+                                ],
+                                "enabled_cloudwatch_logs_exports": [
+                                    [
+                                        "postgresql"
+                                    ]
+                                ],
+                                "engine": [
+                                    "postgres"
+                                ],
+                                "final_snapshot_identifier": [
+                                    "brightline-app-db-final"
+                                ],
+                                "iam_database_authentication_enabled": [
+                                    true
+                                ],
+                                "identifier": [
+                                    "brightline-app-db"
+                                ],
+                                "instance_class": [
+                                    "db.t4g.micro"
+                                ],
+                                "kms_key_id": [
+                                    "aws_kms_key.data.arn"
+                                ],
+                                "manage_master_user_password": [
+                                    true
+                                ],
+                                "monitoring_interval": [
+                                    60
+                                ],
+                                "monitoring_role_arn": [
+                                    "aws_iam_role.rds_monitoring.arn"
+                                ],
+                                "multi_az": [
+                                    true
+                                ],
+                                "performance_insights_enabled": [
+                                    true
+                                ],
+                                "performance_insights_kms_key_id": [
+                                    "aws_kms_key.data.arn"
+                                ],
+                                "publicly_accessible": [
+                                    false
+                                ],
+                                "skip_final_snapshot": [
+                                    false
+                                ],
+                                "storage_encrypted": [
+                                    true
+                                ],
+                                "username": [
+                                    "app_admin"
+                                ],
+                                "__address__": "aws_db_instance.app",
+                                "__provider_address__": "aws.default"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "resource_type",
+                        "parameter/*/name",
+                        "engine"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/main.tf",
+                "file_abs_path": "/home/claude/repo/grc-cloud-audit-labs/05-soc2-aws-control-mapping/terraform/after/main.tf",
+                "repo_file_path": "/terraform/after/main.tf",
+                "file_line_range": [
+                    199,
+                    222
+                ],
+                "resource": "aws_db_instance.app",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": {},
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": null,
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/claude/repo/grc-cloud-audit-labs/05-soc2-aws-control-mapping/terraform/after/main.tf"
+            },
+            {
+                "check_id": "CKV2_AWS_61",
+                "bc_check_id": null,
+                "check_name": "Ensure that an S3 bucket has a lifecycle configuration",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_s3_bucket": {
+                            "patient_documents": {
+                                "__end_line__": 51,
+                                "__start_line__": 49,
+                                "bucket": [
+                                    "brightline-patient-documents"
+                                ],
+                                "__address__": "aws_s3_bucket.patient_documents",
+                                "__provider_address__": "aws.default"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "lifecycle_rule",
+                        "resource_type"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/main.tf",
+                "file_abs_path": "/home/claude/repo/grc-cloud-audit-labs/05-soc2-aws-control-mapping/terraform/after/main.tf",
+                "repo_file_path": "/terraform/after/main.tf",
+                "file_line_range": [
+                    49,
+                    51
+                ],
+                "resource": "aws_s3_bucket.patient_documents",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": {},
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": null,
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/claude/repo/grc-cloud-audit-labs/05-soc2-aws-control-mapping/terraform/after/main.tf"
+            },
+            {
+                "check_id": "CKV2_AWS_3",
+                "bc_check_id": null,
+                "check_name": "Ensure GuardDuty is enabled to specific org/region",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_guardduty_detector": {
+                            "main": {
+                                "__end_line__": 262,
+                                "__start_line__": 260,
+                                "enable": [
+                                    true
+                                ],
+                                "__address__": "aws_guardduty_detector.main",
+                                "__provider_address__": "aws.default"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "resource_type",
+                        "auto_enable",
+                        "auto_enable_organization_members",
+                        "enable"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/main.tf",
+                "file_abs_path": "/home/claude/repo/grc-cloud-audit-labs/05-soc2-aws-control-mapping/terraform/after/main.tf",
+                "repo_file_path": "/terraform/after/main.tf",
+                "file_line_range": [
+                    260,
+                    262
+                ],
+                "resource": "aws_guardduty_detector.main",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": {},
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": null,
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/claude/repo/grc-cloud-audit-labs/05-soc2-aws-control-mapping/terraform/after/main.tf"
+            },
+            {
+                "check_id": "CKV2_AWS_10",
+                "bc_check_id": null,
+                "check_name": "Ensure CloudTrail trails are integrated with CloudWatch Logs",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_cloudtrail": {
+                            "main": {
+                                "__end_line__": 165,
+                                "__start_line__": 157,
+                                "depends_on": [
+                                    [
+                                        "aws_s3_bucket_policy.trail_logs"
+                                    ]
+                                ],
+                                "enable_log_file_validation": [
+                                    true
+                                ],
+                                "include_global_service_events": [
+                                    true
+                                ],
+                                "is_multi_region_trail": [
+                                    true
+                                ],
+                                "kms_key_id": [
+                                    "aws_kms_key.data.arn"
+                                ],
+                                "name": [
+                                    "brightline-trail"
+                                ],
+                                "s3_bucket_name": [
+                                    "aws_s3_bucket.trail_logs.id"
+                                ],
+                                "__address__": "aws_cloudtrail.main",
+                                "__provider_address__": "aws.default"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "resource_type",
+                        "cloud_watch_logs_group_arn"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/main.tf",
+                "file_abs_path": "/home/claude/repo/grc-cloud-audit-labs/05-soc2-aws-control-mapping/terraform/after/main.tf",
+                "repo_file_path": "/terraform/after/main.tf",
+                "file_line_range": [
+                    157,
+                    165
+                ],
+                "resource": "aws_cloudtrail.main",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": {},
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": null,
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/claude/repo/grc-cloud-audit-labs/05-soc2-aws-control-mapping/terraform/after/main.tf"
+            },
+            {
+                "check_id": "CKV_AWS_144",
+                "bc_check_id": null,
+                "check_name": "Ensure that S3 bucket has cross-region replication enabled",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_s3_bucket": {
+                            "patient_documents": {
+                                "__end_line__": 51,
+                                "__start_line__": 49,
+                                "bucket": [
+                                    "brightline-patient-documents"
+                                ],
+                                "__address__": "aws_s3_bucket.patient_documents",
+                                "__provider_address__": "aws.default"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "resource_type",
+                        "rule/*/status",
+                        "replication_configuration/rules/*/status"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/main.tf",
+                "file_abs_path": "/home/claude/repo/grc-cloud-audit-labs/05-soc2-aws-control-mapping/terraform/after/main.tf",
+                "repo_file_path": "/terraform/after/main.tf",
+                "file_line_range": [
+                    49,
+                    51
+                ],
+                "resource": "aws_s3_bucket.patient_documents",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": {},
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": null,
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/claude/repo/grc-cloud-audit-labs/05-soc2-aws-control-mapping/terraform/after/main.tf"
+            },
+            {
+                "check_id": "CKV_AWS_144",
+                "bc_check_id": null,
+                "check_name": "Ensure that S3 bucket has cross-region replication enabled",
+                "check_result": {
+                    "result": "FAILED",
+                    "entity": {
+                        "aws_s3_bucket": {
+                            "trail_logs": {
+                                "__end_line__": 88,
+                                "__start_line__": 86,
+                                "bucket": [
+                                    "brightline-cloudtrail-logs"
+                                ],
+                                "__address__": "aws_s3_bucket.trail_logs",
+                                "__provider_address__": "aws.default"
+                            }
+                        }
+                    },
+                    "evaluated_keys": [
+                        "resource_type",
+                        "rule/*/status",
+                        "replication_configuration/rules/*/status"
+                    ]
+                },
+                "code_block": null,
+                "file_path": "/main.tf",
+                "file_abs_path": "/home/claude/repo/grc-cloud-audit-labs/05-soc2-aws-control-mapping/terraform/after/main.tf",
+                "repo_file_path": "/terraform/after/main.tf",
+                "file_line_range": [
+                    86,
+                    88
+                ],
+                "resource": "aws_s3_bucket.trail_logs",
+                "evaluations": null,
+                "check_class": "checkov.common.graph.checks_infra.base_check",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": {},
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": null,
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": "/home/claude/repo/grc-cloud-audit-labs/05-soc2-aws-control-mapping/terraform/after/main.tf"
+            }
+        ]
+    },
+    "summary": {
+        "passed": 82,
+        "failed": 9,
+        "skipped": 0,
+        "parsing_errors": 0,
+        "resource_count": 33,
+        "checkov_version": "3.4.3"
+    }
+}

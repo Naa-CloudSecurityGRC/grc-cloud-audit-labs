@@ -1,0 +1,5 @@
+// Azure Resource Graph: resources missing the Owner or ExpirationDate tag
+Resources
+| where isempty(tostring(tags['Owner'])) or isempty(tostring(tags['ExpirationDate']))
+| summarize missingTags = count() by type
+| order by missingTags desc

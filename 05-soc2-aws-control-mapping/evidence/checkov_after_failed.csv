@@ -1,0 +1,10 @@
+check_id,resource,check_name
+CKV_AWS_252,aws_cloudtrail.main,Ensure CloudTrail defines an SNS Topic
+CKV2_AWS_62,aws_s3_bucket.patient_documents,Ensure S3 buckets should have event notifications enabled
+CKV2_AWS_62,aws_s3_bucket.trail_logs,Ensure S3 buckets should have event notifications enabled
+CKV2_AWS_30,aws_db_instance.app,Ensure Postgres RDS as aws_db_instance has Query Logging enabled
+CKV2_AWS_61,aws_s3_bucket.patient_documents,Ensure that an S3 bucket has a lifecycle configuration
+CKV2_AWS_3,aws_guardduty_detector.main,Ensure GuardDuty is enabled to specific org/region
+CKV2_AWS_10,aws_cloudtrail.main,Ensure CloudTrail trails are integrated with CloudWatch Logs
+CKV_AWS_144,aws_s3_bucket.patient_documents,Ensure that S3 bucket has cross-region replication enabled
+CKV_AWS_144,aws_s3_bucket.trail_logs,Ensure that S3 bucket has cross-region replication enabled

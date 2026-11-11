@@ -1,0 +1,4 @@
+sub,resourceGroup,disk,sku,sizeGB,estMonthlyUSD,owner
+3,rg-labs-app,cb-orphan-disk00,StandardSSD_LRS,1024,76.8,data@carebridge.example
+1,rg-prod-app,cb-orphan-disk01,StandardSSD_LRS,127,9.53,data@carebridge.example
+3,rg-labs-legacy,cb-orphan-disk02,Standard_LRS,1024,46.08,data@carebridge.example

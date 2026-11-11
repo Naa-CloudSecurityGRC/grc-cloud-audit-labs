@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "displayName": "Storage accounts must disallow anonymous blob access, require HTTPS and TLS 1.2",
+    "policyType": "Custom",
+    "mode": "Indexed",
+    "description": "Denies storage accounts that allow anonymous (public) blob access, accept HTTP, or allow TLS below 1.2. Azure also has a built-in policy for public access; this custom version combines the three checks.",
+    "metadata": { "category": "Storage", "version": "1.0.0" },
+    "parameters": {
+      "effect": { "type": "String", "allowedValues": [ "Audit", "Deny", "Disabled" ], "defaultValue": "Deny" }
+    },
+    "policyRule": {
+      "if": {
+        "allOf": [
+          { "field": "type", "equals": "Microsoft.Storage/storageAccounts" },
+          {
+            "anyOf": [
+              { "field": "Microsoft.Storage/storageAccounts/allowBlobPublicAccess", "notEquals": false },
+              { "field": "Microsoft.Storage/storageAccounts/supportsHttpsTrafficOnly", "notEquals": true },
+              { "field": "Microsoft.Storage/storageAccounts/minimumTlsVersion", "notEquals": "TLS1_2" }
+            ]
+          }
+        ]
+      },
+      "then": { "effect": "[parameters('effect')]" }
+    }
+  }
+}

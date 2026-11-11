@@ -1,0 +1,5 @@
+type,missingOwnerOrExpiration
+microsoft.compute/disks,103
+microsoft.compute/virtualmachines,83
+microsoft.network/networksecuritygroups,31
+microsoft.storage/storageaccounts,7
